@@ -6,22 +6,24 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-}
 
+}
 body {
     font-family: 'Quicksand', sans-serif;
     color: grey;
+    
 }
-/* configuraçoes genericas */
+
 .container-grid{
     width: 80%;
+    max-width: 1000px; 
+    min-width: 992px;
     margin: 0 auto;
    
 }
-
 /* cabeçalho */
 header{
-    background-color: grey;
+    background-color: #676767;
 }
 header .header-flex{
     display:  flex;
@@ -58,24 +60,49 @@ header nav a {
 main .colunas-flex {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 main .coluna1 {
     width: 75%;
-    background-color: green;
+    background-color: white;
+}
+/* section coluna1 */
+/* Titulo H2 */
+main .coluna1 h2{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;  
+}
+/* paragrafos */
+main .coluna1 p{
+    margin: 0px 20px 20px;
+    line-height: 24px;
 }
  /* imagem do lapis */
 main .coluna1 #lapis{
     width: 100%;
 }
- 
-    
+
+ /* section coluna2 */
+/* aside e class */
 main .coluna2{
 width: 20%;
-background-color: green;
-}
+
 h2 {
     width: 300px;
+}
+
+main .coluna2 article{
+    background-color: white;
+    margin-bottom: 20px;
 
 }
 
+/* footer */
+footer {
+    /* top right bottom left */
+    padding: 20px 0; 
+    background-color: #676767;
+    color: white;
+}
